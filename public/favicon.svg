@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect x="24" y="24" width="464" height="464" rx="90" fill="#0c0c14" stroke="#10B981" stroke-width="16" />
+  
+  <g transform="translate(110, 110)">
+    
+    <path d="M120 180 H20 V20 H220 V100 H120 V60 H180 V40 H60 V160 H220 V120 H160" fill="none" stroke="#10B981" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values="1; 0.5; 1" dur="2s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="stroke-width" values="24; 28; 24" dur="2s" repeatCount="indefinite" begin="0s"/>
+    </path>
+    
+    <path d="M40 280 H220 V200 H60 V220 H180 V240 H40 V280" fill="none" stroke="#F59E0B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" transform="translate(0, 30)">
+      <animate attributeName="opacity" values="1; 0.5; 1" dur="2s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="stroke-width" values="24; 28; 24" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </path>
+    
+  </g>
+</svg>

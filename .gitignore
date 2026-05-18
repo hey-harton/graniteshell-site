@@ -1,0 +1,117 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all environment files.
+/.env*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore storage (uploaded files in development and any SQLite databases).
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore key files for decrypting credentials and more.
+/config/*.key
+/config/master.key
+
+# Ignore Tailwind/esbuild output
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# ==========================================
+# TAMBAHAN WAJIB UNTUK LINGKUNGAN KERJA
+# ==========================================
+
+# Ignore SQLite database files (Jangan sampai DB lokal masuk GitHub)
+/*.sqlite3
+/*.sqlite3-*
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore text editor/IDE configs (VS Code, JetBrains)
+/.vscode/
+/.idea/# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all environment files.
+/.env*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore storage.
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore key files for decrypting credentials and more.
+/config/*.key
+/config/master.key
+
+# Ignore Tailwind/esbuild output
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# ==========================================
+# TAMBAHAN WAJIB UNTUK LINGKUNGAN KERJA
+# ==========================================
+
+# Ignore SQLite database files 
+/*.sqlite3
+/*.sqlite3-*
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore text editor/IDE configs 
+/.vscode/
+/.idea/

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0A0A0A;
+  --color-brand-panel: #171717;
+  --color-brand-emerald: #10B981;
+  --color-brand-emerald-hover: #059669;
+  --color-brand-amber: #F59E0B;
+  --color-brand-amber-hover: #D97706;
+}

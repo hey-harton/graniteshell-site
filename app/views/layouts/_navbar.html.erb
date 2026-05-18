@@ -1,0 +1,17 @@
+<header class="w-full relative z-10 border border-zinc-800/60 rounded-xl bg-zinc-950/40 backdrop-blur-md px-6 py-4 flex flex-row justify-between items-center mb-8">
+  
+  <div class="flex-1 flex flex-row space-x-6 text-xs md:text-sm tracking-widest uppercase text-zinc-400">
+    <%= link_to 'Home', root_path, class: current_page?(root_path) ? "text-brand-emerald font-bold" : "hover:text-white transition" %>
+    <%= link_to 'Features', features_path, class: current_page?(features_path) ? "text-brand-emerald font-bold" : "hover:text-white transition" %>
+    <%= link_to 'Documentation', docs_path, class: current_page?(docs_path) ? "text-brand-emerald font-bold" : "hover:text-white transition" %>
+  </div>
+  
+  <div class="flex-1 text-center text-base md:text-xl font-black tracking-[0.2em] uppercase text-white">
+    Granite<span class="text-brand-emerald">Shell</span>
+  </div>
+  
+  <div class="flex-1 text-right text-xs md:text-sm tracking-widest uppercase">
+    <%= link_to 'Download', download_path, class: "text-brand-amber hover:underline font-bold" %>
+  </div>
+
+</header>

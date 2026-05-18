@@ -1,0 +1,14 @@
+# See https://git-scm.com/docs/gitattributes for more about git attribute files.
+
+# Standarisasi Line Endings (Mencegah konflik CRLF Windows vs LF Linux)
+* text=auto
+
+# Mark the database schema as having been generated.
+db/schema.rb linguist-generated
+
+# Mark any vendored files as having been vendored.
+vendor/* linguist-vendored
+
+# Aturan khusus untuk file kredensial Rails
+config/credentials/*.yml.enc diff=rails_credentials
+config/credentials.yml.enc diff=rails_credentials
