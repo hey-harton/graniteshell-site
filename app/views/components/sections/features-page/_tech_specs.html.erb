@@ -1,55 +1,80 @@
-<section class="w-full max-w-4xl mx-auto my-24 px-4 relative z-10">
+<section class="w-full max-w-7xl mx-auto my-24 md:my-32 px-4 md:px-6 lg:px-12 relative z-10">
   
-  <div class="flex items-center space-x-4 mb-8 border-b border-zinc-800/60 pb-4">
-    <div class="w-2 h-2 bg-brand-emerald animate-pulse"></div>
-    <h3 class="text-sm font-mono tracking-[0.2em] uppercase text-zinc-300 font-bold">SPESIFIKASI INFRASTRUKTUR</h3>
+  <div class="flex items-center space-x-3 mb-8 border-b border-white/5 pb-4">
+    <div class="w-1.5 h-1.5 bg-brand-emerald animate-pulse"></div>
+    <h3 class="text-[10px] md:text-xs font-sans font-medium tracking-[0.2em] uppercase text-zinc-400">
+      Spesifikasi Infrastruktur Sistem
+    </h3>
   </div>
 
-  <div class="bg-zinc-950 border border-zinc-800/80 rounded-lg p-1 font-mono text-xs text-zinc-400">
-    <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-zinc-800/80">
+  <div class="w-full bg-[#0C0C12] border border-white/5 rounded-sm overflow-hidden shadow-2xl">
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/5">
       
-      <div class="p-6 space-y-6">
+      <div class="p-8 md:p-10 space-y-10">
         <div>
-          <span class="block text-zinc-600 uppercase tracking-widest mb-1 text-[10px]">Model Inferensi Inti</span>
-          <span class="text-brand-emerald font-bold">IBM Granite (via Replicate API)</span>
+          <span class="block text-zinc-500 font-sans font-medium uppercase tracking-widest mb-3 text-[10px]">Model Inferensi Inti</span>
+          <span class="text-brand-emerald font-mono text-[13px]">IBM Granite (via Replicate API)</span>
         </div>
         
         <div>
-          <span class="block text-zinc-600 uppercase tracking-widest mb-3 text-[10px]">Optimalisasi Sistem</span>
-          <div class="space-y-2">
+          <span class="block text-zinc-500 font-sans font-medium uppercase tracking-widest mb-4 text-[10px]">Optimalisasi OS</span>
+          <div class="space-y-3 font-mono text-[13px]">
             <div class="flex justify-between items-center">
-              <span class="text-white">Windows 11</span>
-              <span class="text-[9px] font-bold text-brand-emerald bg-brand-emerald/10 px-2 py-0.5 rounded-sm border border-brand-emerald/20 tracking-wider">READY</span>
-            </div>
-            <div class="flex justify-between items-center opacity-70">
-              <span class="text-zinc-400">MacOS</span>
+              <span class="text-white">Windows 11 / PWS Core</span>
               <span class="text-[9px] font-bold text-brand-amber bg-brand-amber/10 px-2 py-0.5 rounded-sm border border-brand-amber/20 tracking-wider">SEGERA</span>
             </div>
-            <div class="flex justify-between items-center opacity-70">
-              <span class="text-zinc-400">Linux</span>
+            <div class="flex justify-between items-center opacity-60">
+              <span class="text-zinc-400">MacOS (ZSH)</span>
+              <span class="text-[9px] font-bold text-brand-amber bg-brand-amber/10 px-2 py-0.5 rounded-sm border border-brand-amber/20 tracking-wider">SEGERA</span>
+            </div>
+            <div class="flex justify-between items-center opacity-60">
+              <span class="text-zinc-400">Linux (BASH)</span>
               <span class="text-[9px] font-bold text-brand-amber bg-brand-amber/10 px-2 py-0.5 rounded-sm border border-brand-amber/20 tracking-wider">SEGERA</span>
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="p-8 md:p-10 space-y-10">
         <div>
-          <span class="block text-zinc-600 uppercase tracking-widest mb-1 text-[10px]">Kompatibilitas Format</span>
-          <span class="text-white">PS1, PSM1, JSON, CSV, TXT, LOG</span>
+          <span class="block text-zinc-500 font-sans font-medium uppercase tracking-widest mb-3 text-[10px]">Kompatibilitas Format</span>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-sm border border-white/5">PS1</span>
+            <span class="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-sm border border-white/5">PSM1</span>
+            <span class="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-sm border border-white/5">JSON</span>
+            <span class="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-sm border border-white/5">CSV</span>
+            <span class="text-xs font-mono text-zinc-300 bg-white/5 px-2 py-1 rounded-sm border border-white/5">LOG</span>
+          </div>
+        </div>
+        
+        <div>
+          <span class="block text-zinc-500 font-sans font-medium uppercase tracking-widest mb-3 text-[10px]">Jendela Konteks (*Context*)</span>
+          <span class="text-brand-amber font-mono text-[13px]">Dinamis (Disesuaikan via Parameter)</span>
         </div>
       </div>
 
-      <div class="p-6 space-y-6">
+      <div class="p-8 md:p-10 space-y-10">
         <div>
-          <span class="block text-zinc-600 uppercase tracking-widest mb-1 text-[10px]">Jendela Konteks (*Context Window*)</span>
-          <span class="text-brand-amber font-bold">Disesuaikan via Parameter (Dinamis)</span>
+          <span class="block text-zinc-500 font-sans font-medium uppercase tracking-widest mb-3 text-[10px]">Mode Eksekusi</span>
+          <ul class="space-y-2 text-white font-mono text-[13px]">
+            <li class="flex items-center space-x-2">
+              <span class="text-brand-emerald">›</span>
+              <span>Agen Otonom (Mandiri)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-brand-emerald">›</span>
+              <span>Interaksi Prompt Tunggal</span>
+            </li>
+          </ul>
         </div>
+        
         <div>
-          <span class="block text-zinc-600 uppercase tracking-widest mb-1 text-[10px]">Mode Eksekusi</span>
-          <span class="text-white">Agen Otonom & Interaksi Prompt Tunggal</span>
-        </div>
-        <div>
-          <span class="block text-zinc-600 uppercase tracking-widest mb-1 text-[10px]">Telemetri Keamanan</span>
-          <span class="text-white">Nihil (0% Data Logging di Pihak Gshell)</span>
+          <span class="block text-zinc-500 font-sans font-medium uppercase tracking-widest mb-3 text-[10px]">Telemetri Keamanan</span>
+          <div class="flex items-center space-x-2">
+            <svg class="w-4 h-4 text-brand-emerald" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7a4 4 0 00-8 0v4h8z"></path></svg>
+            <span class="text-white font-mono text-[13px]">Nihil (0% Data Logging di Cloud)</span>
+          </div>
         </div>
       </div>
 

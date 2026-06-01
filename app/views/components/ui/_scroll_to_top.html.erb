@@ -1,0 +1,45 @@
+<button id="scrollToTopBtn" 
+        class="fixed bottom-8 right-8 z-[100] p-3 bg-[#0C0C12] border border-white/10 text-zinc-500 rounded-sm shadow-lg opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:text-brand-emerald hover:border-brand-emerald/40 hover:bg-[#0F151B]"
+        aria-label="Kembali ke Atas"
+        title="Kembali ke Atas">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+<script>
+  // Menggunakan event turbo:load agar script tetap jalan saat pindah halaman tanpa reload penuh
+  document.addEventListener("turbo:load", function() {
+    const btn = document.getElementById("scrollToTopBtn");
+    
+    // Cegah script error jika tombol tidak ditemukan
+    if (!btn) return;
+
+    // Fungsi untuk memantau posisi scroll
+    const toggleVisibility = () => {
+      // Jika user sudah scroll lebih dari 400px ke bawah
+      if (window.scrollY > 400) {
+        btn.classList.remove("opacity-0", "translate-y-10", "pointer-events-none");
+        btn.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+      } else {
+        btn.classList.add("opacity-0", "translate-y-10", "pointer-events-none");
+        btn.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+      }
+    };
+
+    // Dengarkan event scroll di window
+    window.addEventListener("scroll", toggleVisibility);
+
+    // Jalankan sekali saat halaman dimuat (untuk cek posisi awal)
+    toggleVisibility();
+
+    // Fungsi klik untuk naik ke atas dengan mulus (smooth scroll)
+    btn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }, { once: true }); 
+  // { once: true } mencegah event listener bertumpuk jika user sering pindah halaman
+</script>

@@ -1,39 +1,68 @@
-<section class="w-full max-w-6xl mx-auto my-16 px-4 relative z-10">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+<section class="w-full max-w-7xl mx-auto my-24 px-4 md:px-6 lg:px-12 relative z-10">
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
-    <div class="group relative bg-zinc-950/60 border border-zinc-800/80 p-8 rounded-xl overflow-hidden transition-all duration-300 hover:border-brand-emerald/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)]">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-brand-emerald/5 rounded-bl-full pointer-events-none group-hover:bg-brand-emerald/10 transition-colors"></div>
-      <div class="text-brand-emerald text-3xl mb-6 font-mono font-black">>_</div>
-      <h3 class="text-xl font-bold uppercase text-white mb-3 tracking-widest">Sintesis Skrip Dinamis</h3>
-      <p class="text-sm text-zinc-400 font-mono leading-relaxed">
-        Lewati proses Googling berjam-jam. Instruksikan tujuan Anda dalam bahasa alami, dan Gshell akan merakit skrip PowerShell berskala produksi (lengkap dengan blok try-catch) secara instan.
+    <div class="group relative bg-[#0C0C12] border border-white/5 p-8 md:p-10 rounded-sm overflow-hidden transition-colors duration-300 hover:border-brand-emerald/40 hover:bg-[#0F151B]">
+      <div class="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-20 group-hover:opacity-100 transition-opacity">
+        <div class="absolute top-0 right-0 w-8 h-[1px] bg-brand-emerald"></div>
+        <div class="absolute top-0 right-0 w-[1px] h-8 bg-brand-emerald"></div>
+      </div>
+      
+      <div class="w-10 h-10 rounded-sm border border-brand-emerald/20 bg-brand-emerald/10 flex items-center justify-center text-brand-emerald mb-8">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+      </div>
+      
+      <h3 class="text-xl md:text-2xl font-normal text-white mb-4">Sintesis Skrip Dinamis</h3>
+      <p class="text-sm md:text-[15px] text-zinc-400 font-sans font-light leading-relaxed">
+        Lewati proses riset berjam-jam. Instruksikan tujuan Anda dalam bahasa alami, dan GShell akan merakit skrip PowerShell berskala produksi (lengkap dengan blok penanganan error) secara instan.
       </p>
     </div>
 
-    <div class="group relative bg-zinc-950/60 border border-zinc-800/80 p-8 rounded-xl overflow-hidden transition-all duration-300 hover:border-brand-amber/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-brand-amber/5 rounded-bl-full pointer-events-none group-hover:bg-brand-amber/10 transition-colors"></div>
-      <div class="text-brand-amber text-3xl mb-6 font-mono font-black">!#</div>
-      <h3 class="text-xl font-bold uppercase text-white mb-3 tracking-widest">Analisis Log & Debugging</h3>
-      <p class="text-sm text-zinc-400 font-mono leading-relaxed">
-        Lemparkan file log server yang tebal atau pesan error merah ke Gshell. Modul AI akan melakukan pemindaian pola (*pattern recognition*) untuk menemukan akar masalah dan menyarankan perbaikan komando.
+    <div class="group relative bg-[#0C0C12] border border-white/5 p-8 md:p-10 rounded-sm overflow-hidden transition-colors duration-300 hover:border-brand-amber/40 hover:bg-[#15120F]">
+      <div class="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-20 group-hover:opacity-100 transition-opacity">
+        <div class="absolute top-0 right-0 w-8 h-[1px] bg-brand-amber"></div>
+        <div class="absolute top-0 right-0 w-[1px] h-8 bg-brand-amber"></div>
+      </div>
+      
+      <div class="w-10 h-10 rounded-sm border border-brand-amber/20 bg-brand-amber/10 flex items-center justify-center text-brand-amber mb-8">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+      </div>
+      
+      <h3 class="text-xl md:text-2xl font-normal text-white mb-4">Analisis Log & Debugging</h3>
+      <p class="text-sm md:text-[15px] text-zinc-400 font-sans font-light leading-relaxed">
+        Lemparkan file log server yang tebal atau pesan error kompleks ke GShell. Modul AI akan melakukan pemindaian pola (*pattern recognition*) untuk menemukan akar masalah dan menyarankan perbaikan komando.
       </p>
     </div>
 
-    <div class="group relative bg-zinc-950/60 border border-zinc-800/80 p-8 rounded-xl overflow-hidden transition-all duration-300 hover:border-brand-amber/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-brand-amber/5 rounded-bl-full pointer-events-none group-hover:bg-brand-amber/10 transition-colors"></div>
-      <div class="text-brand-amber text-3xl mb-6 font-mono font-black">{}</div>
-      <h3 class="text-xl font-bold uppercase text-white mb-3 tracking-widest">Injeksi & Refactoring Kode</h3>
-      <p class="text-sm text-zinc-400 font-mono leading-relaxed">
-        Tidak sekadar membaca. Gshell memiliki otorisasi agen untuk membaca file proyek Anda, melakukan *refactoring*, dan menyuntikkan fungsi baru langsung ke dalam file secara presisi.
+    <div class="group relative bg-[#0C0C12] border border-white/5 p-8 md:p-10 rounded-sm overflow-hidden transition-colors duration-300 hover:border-brand-amber/40 hover:bg-[#15120F]">
+      <div class="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-20 group-hover:opacity-100 transition-opacity">
+        <div class="absolute top-0 right-0 w-8 h-[1px] bg-brand-amber"></div>
+        <div class="absolute top-0 right-0 w-[1px] h-8 bg-brand-amber"></div>
+      </div>
+      
+      <div class="w-10 h-10 rounded-sm border border-brand-amber/20 bg-brand-amber/10 flex items-center justify-center text-brand-amber mb-8">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+      </div>
+      
+      <h3 class="text-xl md:text-2xl font-normal text-white mb-4">Injeksi & Refactoring Kode</h3>
+      <p class="text-sm md:text-[15px] text-zinc-400 font-sans font-light leading-relaxed">
+        Tidak sekadar membaca. GShell memiliki otorisasi agen untuk membedah file proyek Anda, melakukan *refactoring* otomatis, dan menyuntikkan fungsi baru langsung ke dalam target file secara presisi.
       </p>
     </div>
 
-    <div class="group relative bg-zinc-950/60 border border-zinc-800/80 p-8 rounded-xl overflow-hidden transition-all duration-300 hover:border-brand-emerald/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)]">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-brand-emerald/5 rounded-bl-full pointer-events-none group-hover:bg-brand-emerald/10 transition-colors"></div>
-      <div class="text-brand-emerald text-3xl mb-6 font-mono font-black">||</div>
-      <h3 class="text-xl font-bold uppercase text-white mb-3 tracking-widest">Eksekusi Pipa (Pipeline)</h3>
-      <p class="text-sm text-zinc-400 font-mono leading-relaxed">
-        Dibangun murni untuk Windows. Anda dapat mem-*pipe* objek hasil output Gshell langsung ke `Where-Object`, `Select-Object`, atau perintah *native* PowerShell lainnya tanpa hambatan format.
+    <div class="group relative bg-[#0C0C12] border border-white/5 p-8 md:p-10 rounded-sm overflow-hidden transition-colors duration-300 hover:border-brand-emerald/40 hover:bg-[#0F151B]">
+      <div class="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-20 group-hover:opacity-100 transition-opacity">
+        <div class="absolute top-0 right-0 w-8 h-[1px] bg-brand-emerald"></div>
+        <div class="absolute top-0 right-0 w-[1px] h-8 bg-brand-emerald"></div>
+      </div>
+      
+      <div class="w-10 h-10 rounded-sm border border-brand-emerald/20 bg-brand-emerald/10 flex items-center justify-center text-brand-emerald mb-8">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+      </div>
+      
+      <h3 class="text-xl md:text-2xl font-normal text-white mb-4">Eksekusi Pipa (Pipeline)</h3>
+      <p class="text-sm md:text-[15px] text-zinc-400 font-sans font-light leading-relaxed">
+        Dibangun murni untuk *environment* Windows. Anda dapat mem-*pipe* objek hasil *output* GShell secara mulus ke `Where-Object`, `Select-Object`, atau utilitas bawaan OS lainnya tanpa kendala.
       </p>
     </div>
 

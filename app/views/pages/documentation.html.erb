@@ -1,4 +1,18 @@
-<div>
-  <h1 class="font-bold text-4xl">Pages#documentation</h1>
-  <p>Find me in app/views/pages/documentation.html.erb</p>
+<style>
+  html, body, main { 
+    overflow: visible !important; 
+    overflow-x: visible !important; 
+  }
+</style>
+
+<div class="w-full max-w-[90rem] mx-auto px-4 md:px-6 lg:px-8 pt-32 pb-16 flex flex-col md:flex-row items-start relative z-10">
+  
+  <div>
+    <%= render "components/sections/documentation-pages/sidebar" %>
+  </div>
+
+  <div class="flex-1 w-full md:pl-10 lg:pl-16 min-w-0">
+    <%= render "components/sections/documentation-pages/content" %>
+  </div>
+
 </div>

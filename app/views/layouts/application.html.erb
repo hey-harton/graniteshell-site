@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" class="scroll-smooth">
   <head>
-    <title><%= content_for(:title) || "GraniteShell" %></title>
+    <title><%= content_for(:title) || "GShell — Cognitive Terminal" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.svg">
-
+    <%= favicon_link_tag 'logo.svg', type: 'image/svg+xml' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -14,15 +12,16 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-[#0A0A0A] m-0 text-white min-h-screen flex flex-col justify-between p-4 md:p-6 font-sans overflow-x-hidden">
+  <body class="bg-[#08080C] m-0 text-white min-h-screen flex flex-col font-sans selection:bg-brand-emerald/30 selection:text-white">
     
     <%= render "layouts/navbar" %>
 
-    <main class="w-full my-auto relative z-10">
+    <main class="w-full flex-grow">
       <%= yield %>
     </main>
 
     <%= render "layouts/footer" %>
+    <%= render "components/ui/scroll_to_top" %>
 
   </body>
 </html>

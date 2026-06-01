@@ -1,72 +1,80 @@
-<section class="w-full max-w-5xl mx-auto my-16 px-4 relative z-10">
+<section class="w-full max-w-6xl mx-auto my-16 md:my-24 px-4 md:px-6 lg:px-12 relative z-10">
   
-  <div class="text-center mb-8">
-    <h3 class="text-xs font-mono tracking-[0.3em] uppercase text-brand-emerald">01 // DEMO INTERAKTIF</h3>
-    <p class="text-xl md:text-2xl font-black uppercase tracking-wide text-zinc-200 mt-2">Saksikan Kendali AI Secara Native</p>
+  <div class="flex flex-col items-center text-center mb-10 md:mb-16">
+    <span class="text-[10px] md:text-xs font-sans font-medium tracking-widest text-brand-emerald mb-3 uppercase">
+      01 // Demo Interaktif
+    </span>
+    <h2 class="text-2xl md:text-4xl lg:text-5xl font-light tracking-tight text-white px-4">
+      Saksikan Kendali AI Secara Native
+    </h2>
   </div>
 
-  <div class="w-full rounded-xl border border-zinc-800/80 bg-[#0C0C14] shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden font-mono text-sm">
+  <div class="w-full rounded-sm border border-zinc-800 bg-gradient-to-br from-[#0C0C12] to-[#050508] shadow-lg overflow-hidden font-mono text-xs md:text-[13px] lg:text-sm">
     
-    <div class="bg-zinc-900/90 px-4 py-3 flex justify-between items-center border-b border-zinc-800/40 select-none">
-      <div class="flex items-center space-x-2">
-        <div class="w-3 h-3 bg-brand-emerald/30 border border-brand-emerald/60 flex items-center justify-center rounded-sm">
-          <span class="text-[8px] text-brand-emerald">>_</span>
-        </div>
-        <span class="text-xs text-zinc-400 font-sans tracking-wide">Gshell — Agentic Engine</span>
+    <div class="bg-[#12121A] px-4 md:px-5 py-3 flex justify-between items-center border-b border-zinc-800 select-none">
+      <div class="flex items-center space-x-2 md:space-x-3 truncate">
+        <svg class="w-3.5 h-3.5 md:w-4 md:h-4 text-brand-emerald opacity-80 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l3 3-3 3m5 0h3M4 15h16v4a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
+        <span class="text-[10px] md:text-xs text-zinc-400 font-sans font-light tracking-wider truncate">gshell-agentic-engine.exe</span>
       </div>
-      <div class="flex space-x-3 opacity-60">
-        <div class="w-2 h-2 border border-zinc-500 rounded-full"></div>
-        <div class="w-2 h-2 border border-zinc-500 rounded-full bg-zinc-500"></div>
-        <div class="w-2 h-2 border border-brand-amber rounded-full bg-brand-amber/30"></div>
+      <div class="flex space-x-4 md:space-x-6 opacity-40 flex-shrink-0">
+        <div class="w-2 md:w-2.5 h-[1px] bg-zinc-300 mt-1.5 md:mt-2"></div>
+        <div class="w-2 h-2 md:w-2.5 md:h-2.5 border border-zinc-300"></div>
+        <div class="w-2 h-2 md:w-2.5 md:h-2.5 relative flex items-center justify-center"><div class="absolute w-2.5 md:w-3 h-[1px] bg-zinc-300 rotate-45"></div><div class="absolute w-2.5 md:w-3 h-[1px] bg-zinc-300 -rotate-45"></div></div>
       </div>
     </div>
 
-    <div class="p-6 space-y-6 min-h-[400px] text-zinc-300 antialiased overflow-x-auto leading-relaxed text-xs md:text-sm">
+    <div class="p-4 md:p-8 lg:p-10 space-y-6 md:space-y-8 min-h-[300px] md:min-h-[400px] text-zinc-300 antialiased leading-relaxed">
       
-      <div class="space-y-2">
-        <div class="flex flex-col md:flex-row md:space-x-2">
-          <span class="text-brand-emerald font-bold">PS D:\MyProject></span>
-          <span class="text-white">Granite -CreateFile "services/NetworkLogger.ps1" -Prompt "Buat fungsi monitor utilisasi bandwidth dan catat log ke csv"</span>
+      <div class="space-y-3">
+        <div class="flex flex-col md:flex-row md:space-x-2 break-words">
+          <span class="text-brand-emerald font-bold shrink-0">PS D:\MyProject></span>
+          <span class="text-white font-medium mt-1 md:mt-0">Granite -CreateFile "services/NetworkLogger.ps1" -Prompt "Buat fungsi monitor utilisasi bandwidth dan catat log ke csv"</span>
         </div>
         
-        <div class="text-zinc-500 text-xs flex items-center space-x-2 animate-pulse">
-          <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-emerald"></span>
+        <div class="text-zinc-500 text-[10px] md:text-xs flex items-center space-x-2 pl-0 md:pl-2">
+          <span class="inline-block w-1.5 h-1.5 rounded-none bg-brand-emerald animate-pulse"></span>
           <span>[GRANITE_8B] // Menganalisis direktori... Membuat file baru...</span>
         </div>
 
-        <div class="border-l-2 border-brand-emerald/40 pl-4 bg-zinc-950/40 py-2 pr-3 rounded-r-md">
-          <div class="text-zinc-500 text-xs font-bold font-sans text-brand-emerald">[SUKSES] File dibuat: \services\NetworkLogger.ps1</div>
-          <pre class="text-zinc-400 text-xs mt-1"><code>function Start-BandwidthMonitor {
+        <div class="border-l border-brand-emerald/40 pl-3 md:pl-5 bg-[#08080C] py-3 md:py-4 pr-3 md:pr-4 rounded-r-sm overflow-hidden">
+          <div class="text-brand-emerald text-[10px] md:text-xs font-bold font-sans tracking-wide mb-2 break-words">[SUKSES] File dibuat: \services\NetworkLogger.ps1</div>
+          
+          <div class="overflow-x-auto">
+            <pre class="text-zinc-400 text-[10px] md:text-[13px] min-w-max"><code>function Start-BandwidthMonitor {
     $logPath = "D:\MyProject\logs\network_usage.csv"
     # Logika dasar monitor utilitas kartu jaringan...
 }</code></pre>
+          </div>
         </div>
       </div>
 
-      <div class="space-y-2 pt-4 border-t border-zinc-900/60">
-        <div class="flex flex-col md:flex-row md:space-x-2">
-          <span class="text-brand-emerald font-bold">PS D:\MyProject></span>
-          <span class="text-white">Granite -ModifyFile "services/NetworkLogger.ps1" -Prompt "Tambahkan fungsi rotasi file otomatis jika ukuran log .csv melebihi 10MB"</span>
+      <div class="space-y-3 pt-6 border-t border-zinc-800/60">
+        <div class="flex flex-col md:flex-row md:space-x-2 break-words">
+          <span class="text-brand-emerald font-bold shrink-0">PS D:\MyProject></span>
+          <span class="text-white font-medium mt-1 md:mt-0">Granite -ModifyFile "services/NetworkLogger.ps1" -Prompt "Tambahkan fungsi rotasi file otomatis jika ukuran log melebihi 10MB"</span>
         </div>
 
-        <div class="text-zinc-500 text-xs flex items-center space-x-2 animate-pulse">
-          <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-amber"></span>
+        <div class="text-zinc-500 text-[10px] md:text-xs flex items-center space-x-2 pl-0 md:pl-2">
+          <span class="inline-block w-1.5 h-1.5 rounded-none bg-brand-amber animate-pulse"></span>
           <span>[GRANITE_8B] // Membaca kode eksisting... Menyuntikkan blok logika baru...</span>
         </div>
 
-        <div class="border-l-2 border-brand-amber/40 pl-4 bg-zinc-950/40 py-3 pr-3 rounded-r-md space-y-2">
-          <div class="text-zinc-500 text-xs font-bold font-sans text-brand-amber">[MODIFIKASI BERHASIL] Blok kode disuntikkan pada baris 12:</div>
-          <pre class="text-brand-emerald text-xs overflow-x-auto"><code># + BLOK INJEKSI BARU DIUTUS OLEH GRANITESHELL
+        <div class="border-l border-brand-amber/40 pl-3 md:pl-5 bg-[#08080C] py-3 md:py-4 pr-3 md:pr-4 rounded-r-sm overflow-hidden">
+          <div class="text-brand-amber text-[10px] md:text-xs font-bold font-sans tracking-wide mb-2 break-words">[MODIFIKASI BERHASIL] Blok kode disuntikkan pada baris 12:</div>
+          
+          <div class="overflow-x-auto">
+            <pre class="text-brand-emerald text-[10px] md:text-[13px] min-w-max"><code># + BLOK INJEKSI BARU DIUTUS OLEH GSHELL
 if ((Get-Item $logPath).Length -gt 10MB) {
     Rename-Item -Path $logPath -NewName "network_usage_$(Get-Date -Format 'yyyyMMddHHmmss').csv"
     Write-Warning "[ROTASI] File log melebihi 10MB, arsip baru dibuat."
 }</code></pre>
+          </div>
         </div>
       </div>
 
-      <div class="flex space-x-2 pt-2 border-t border-zinc-900">
-        <span class="text-brand-emerald font-bold">PS D:\MyProject></span>
-        <span class="w-2 h-4 bg-brand-amber animate-pulse block"></span>
+      <div class="flex flex-row space-x-2 pt-6 border-t border-zinc-800/60 items-center">
+        <span class="text-brand-emerald font-bold shrink-0">PS D:\MyProject></span>
+        <span class="w-2 md:w-2.5 h-4 md:h-5 bg-brand-amber animate-pulse block"></span>
       </div>
 
     </div>
